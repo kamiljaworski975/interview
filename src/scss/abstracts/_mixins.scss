@@ -1,0 +1,50 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm {
+    @media only screen and (min-width: 36em) {
+      @content;
+    } //576
+  }
+  @if $breakpoint == md {
+    @media only screen and (min-width: 48em) {
+      @content;
+    } //768
+  }
+  @if $breakpoint == lg {
+    @media only screen and (min-width: 62em) {
+      @content;
+    } //992
+  }
+  @if $breakpoint == xl {
+    @media only screen and (min-width: 75em) {
+      @content;
+    } // 1200
+  }
+  @if $breakpoint == xxl {
+    @media only screen and (min-width: 93.75em) {
+      @content;
+    } //1500
+  }
+  @if $breakpoint == land-scape {
+    @media screen and (orientation: landscape) {
+      @content;
+    }
+  }
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 8.6rem;
+}

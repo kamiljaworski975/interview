@@ -1,0 +1,42 @@
+html {
+  overflow-x: hidden;
+  font-size: 50%;
+
+  @include respond(lg) {
+    // width > 992
+    font-size: 56.25%;
+  }
+
+  @include respond(xl) {
+    // width > 1200
+    font-size: 62.5%;
+  }
+
+  @include respond(xxl) {
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: $color-tertiary-light;
+  }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    background-color: $color-tertiary-light;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-secondary;
+  }
+}
+
+::selection {
+  color: $color-secondary;
+}

@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-primary;
+}
+
+.heading__primary {
+  color: white;
+  font-size: 8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  display: block;
+}
+
+.heading__secondary {
+  font-size: 10rem;
+  line-height: 1.2;
+  letter-spacing: 0.7rem;
+  margin-bottom: 4rem;
+
+  @include respond(tab-port) {
+    font-size: 8rem;
+  }
+
+  @include respond(phone) {
+    font-size: 6rem;
+  }
+}
+
+.heading__tertiary {
+  font-size: 5.5rem;
+  line-height: 1.4;
+  letter-spacing: 0.1rem;
+  margin-bottom: 4rem;
+}
+
+.heading__quaternary {
+  display: block;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.3;
+
+  @include respond(phone) {
+    line-height: 4rem;
+  }
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1rem;
+}
+
+a {
+  text-decoration: none;
+}
