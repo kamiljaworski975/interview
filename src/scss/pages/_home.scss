@@ -1,0 +1,18 @@
+.section__ourdogs,
+.section__personalities,
+.section__about {
+  padding: 10rem 0;
+}
+
+.section__personalities {
+  & .row {
+    max-width: 100%;
+    @include respond(md) {
+      max-width: 80%;
+    }
+  }
+}
+
+.section__about {
+  background-color: $color-tertiary-dark;
+}

@@ -8,8 +8,13 @@
 @import './base/utilities';
 
 // components
+@import './components/buttons';
+@import './components/doglist';
+@import './components/personalities';
+@import './components/about';
 
 // layout
+@import './layout/navigation';
 @import './layout/footer';
 @import './layout/header';
 

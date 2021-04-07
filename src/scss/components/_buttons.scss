@@ -1,0 +1,27 @@
+.btn {
+  display: inline-block;
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.15);
+  &:hover {
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  &--blue {
+    background-color: rgb(1, 160, 251);
+    color: $color-white;
+    &:hover {
+      background-color: rgb(0, 136, 214);
+    }
+  }
+  &--grey {
+    background-color: rgb(157, 187, 204);
+    color: $color-white;
+    &:hover {
+      background-color: rgb(81, 94, 102);
+    }
+  }
+}

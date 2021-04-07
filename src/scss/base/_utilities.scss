@@ -1,0 +1,8 @@
+.margin-r {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  @include respond(md) {
+    margin-right: 4rem;
+    margin-bottom: 0;
+  }
+}

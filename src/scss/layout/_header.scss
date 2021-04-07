@@ -1,0 +1,46 @@
+.header {
+  background-color: rgb(243, 243, 255);
+  padding: 10rem 0;
+  @include respond(md) {
+    padding: 0;
+  }
+  &__container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+
+    @include respond(md) {
+      flex-direction: row;
+    }
+  }
+
+  &__title {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10rem;
+    @include respond(md) {
+      margin-bottom: 0;
+    }
+    & h1 {
+      margin-bottom: 4rem;
+    }
+    & .paragraph {
+      margin-bottom: 4rem;
+      width: 80%;
+    }
+  }
+  &__img {
+    text-align: center;
+    flex-basis: 100%;
+    & img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.185);
+    }
+  }
+}
