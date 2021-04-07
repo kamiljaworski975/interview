@@ -31,12 +31,12 @@ body {
 
   &::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: $color-tertiary-light;
+    background-color: $color-primary;
   }
 
   &::-webkit-scrollbar {
     width: 8px;
-    background-color: $color-tertiary-light;
+    background-color: $color-primary;
   }
 
   &::-webkit-scrollbar-thumb {
@@ -45,7 +45,7 @@ body {
 }
 
 ::selection {
-  color: $color-secondary;
+  color: $color-tertiary;
 }
 
 .row {

@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="IFC interview assesment" />
+    <title>Dogs Home</title>
   </head>
   <body>
     <nav class="nav__mobile">
@@ -54,8 +55,10 @@
               ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
             <div class="header__title--buttons">
-              <a href="#" class="btn btn--blue margin-r">Buy now</a>
-              <a href="#" class="btn btn--grey"> Contact us</a>
+              <a href="#ourdogs" class="btn btn--blue margin-r">Buy now</a>
+              <a href="mailto: hello@dogshome.com" class="btn btn--grey">
+                Contact us</a
+              >
             </div>
           </div>
           <div class="header__img">
@@ -70,25 +73,29 @@
           <div class="section__ourdogs--title">
             <h3 class="heading__tertiary">Our dogs</h3>
             <label for="filter-dogs">Filter by breed:</label>
-            <select class="select__dogs" name="filter-dogs" id="filter-dogs">
-              <option selected disabled value="select">Select</option>
-              <option value="all">All</option>
-              <option value="pug">Pug</option>
-              <option value="french bulldog">French Bulldog</option>
-              <option value="cockapoo">Cockapoo</option>
-            </select>
+            <div class="select__dogs--box">
+              <select class="select__dogs" name="filter-dogs" id="filter-dogs">
+                <option selected disabled value="select">Select</option>
+                <option value="all">All</option>
+                <option value="pug">Pug</option>
+                <option value="french bulldog">French Bulldog</option>
+                <option value="cockapoo">Cockapoo</option>
+              </select>
+            </div>
           </div>
           <div class="section__ourdogs--sort">
             <label for="sort-dogs">Sort:</label>
-            <select class="select__dogs" name="sort-dogs" id="sort-dogs">
-              <option selected disabled value="select">Select</option>
-              <option value="title">Sort by name</option>
-              <option value="type">Sort by type</option>
-              <option value="age">Sort ascending</option>
-              <option value="age-min">sort descending</option>
-              <option value="male">Filter male</option>
-              <option value="female">Filter female</option>
-            </select>
+            <div class="select__dogs--box">
+              <select class="select__dogs" name="sort-dogs" id="sort-dogs">
+                <option selected disabled value="select">Select</option>
+                <option value="title">Sort by name</option>
+                <option value="type">Sort by type</option>
+                <option value="age">Sort ascending</option>
+                <option value="age-min">sort descending</option>
+                <option value="male">Filter male</option>
+                <option value="female">Filter female</option>
+              </select>
+            </div>
           </div>
           <div class="section__ourdogs--list"></div>
         </div>
@@ -349,7 +356,7 @@
         <div class="row">
           <div class="section__about--container">
             <div class="section__about--img">
-              <img src="./assets/images/dog.jpg" alt="" srcset="" />
+              <img src="./assets/images/dog.jpg" alt="about us image" />
             </div>
             <div class="section__about--text">
               <h2 class="heading__secondary">About us</h2>

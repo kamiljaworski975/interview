@@ -1,9 +1,9 @@
 .footer {
-  background-color: $color-primary;
+  background-color: $color-secondary-dark;
   padding: 4rem 0;
   &__container {
     display: flex;
-    color: white;
+    color: $color-white;
     justify-content: space-between;
     align-items: flex-start;
   }
@@ -21,7 +21,7 @@
     gap: 2rem;
     min-width: 30%;
     & a {
-      color: white;
+      color: $color-white;
     }
   }
 }

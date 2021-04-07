@@ -44,7 +44,7 @@
     }
     & span {
       font-size: 1.3rem;
-      color: $color-tertiary-dark;
+      color: $color-secondary-light;
     }
   }
   &--image {
@@ -83,47 +83,35 @@
   display: flex;
   font-size: 1.4rem;
   width: 15rem;
-  background: #2c3e50;
-  //   overflow: hidden;
   border-radius: 0.25em;
   padding: 1rem 2rem;
-  color: #fff;
   cursor: pointer;
-  &::before {
-    content: '\25BC';
-    position: absolute;
-    display: block !important;
-    top: 0;
-    left: 50%;
-    width: 15px;
-    height: 20px;
-    padding: 0 1em;
-    background: red;
-    cursor: pointer;
-    -webkit-transition: 0.25s all ease;
-    -o-transition: 0.25s all ease;
-    transition: 0.25s all ease;
+  &--box {
+    position: relative;
+    border: 1px solid $color-secondary;
+    &:hover.select__dogs--box::before {
+      color: $color-primary;
+    }
+    &::before {
+      content: '\25BC';
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 50%;
+      right: 2%;
+      width: 15px;
+      height: 15px;
+      padding: 5px;
+      cursor: pointer;
+      -webkit-transition: 0.25s all ease;
+      -o-transition: 0.25s all ease;
+      transition: 0.25s all ease;
+      z-index: 2;
+      transform: translate(-50%, -50%);
+    }
   }
   &::-ms-expand {
     display: none;
   }
-  &:hover::after {
-    color: #f39c12;
-  }
-}
-
-.select__dogs::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0 1em;
-  width: 5px;
-  height: 5px;
-  background: #fd0000;
-  cursor: pointer;
-  pointer-events: none;
-  -webkit-transition: 0.25s all ease;
-  -o-transition: 0.25s all ease;
-  transition: 0.25s all ease;
 }

@@ -9,8 +9,6 @@ const sortDogs = document.querySelector('#sort-dogs');
 const dogArray = dogData.dogs;
 let filteredArr = dogData.dogs;
 
-const selectOptions = {};
-
 const dogElement = (title, type, age, gender, image) => `
 <div class="section__ourdogs--item">
 <div class="section__ourdogs--image">

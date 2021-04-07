@@ -11,17 +11,17 @@
     box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1);
   }
   &--blue {
-    background-color: rgb(1, 160, 251);
+    background-color: $color-btn-primary;
     color: $color-white;
     &:hover {
-      background-color: rgb(0, 136, 214);
+      background-color: rgba($color-btn-primary, 0.7);
     }
   }
   &--grey {
-    background-color: rgb(157, 187, 204);
+    background-color: $color-btn-secondary;
     color: $color-white;
     &:hover {
-      background-color: rgb(81, 94, 102);
+      background-color: rgba($color-btn-secondary, 0.7);
     }
   }
 }

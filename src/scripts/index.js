@@ -6,5 +6,3 @@ import '@fortawesome/fontawesome-free/js/fontawesome';
 
 import './nav-mobile';
 import './filter-dogs';
-
-console.log('dziala');

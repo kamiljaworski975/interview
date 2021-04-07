@@ -1,6 +1,6 @@
 .header {
-  background-color: rgb(243, 243, 255);
-  padding: 10rem 0;
+  background-color: $color-primary;
+  padding: 15rem 0 10rem;
   @include respond(md) {
     padding: 0;
   }

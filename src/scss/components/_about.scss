@@ -40,6 +40,12 @@
     & li {
       font-size: 1.5rem;
       padding: 0.5rem 0;
+      padding-left: 1rem;
+      &::marker {
+        color: $color-tertiary;
+        content: '\2714';
+        font-weight: 700;
+      }
     }
   }
 }
