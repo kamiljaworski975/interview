@@ -10,7 +10,7 @@ const dogArray = dogData.dogs;
 let filteredArr = dogData.dogs;
 
 const dogElement = (title, type, age, gender, image) => `
-<div class="section__ourdogs--item">
+<div class="section__ourdogs--item" data-aos="fade-up" data-aos-easing="ease-in"  data-aos-duration="400">
 <div class="section__ourdogs--image">
   <img src="${image}" alt="" />
 </div>

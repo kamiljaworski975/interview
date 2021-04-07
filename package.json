@@ -41,6 +41,8 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3"
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "aos": "^2.3.4",
+    "autoprefixer": "^10.2.5"
   }
 }

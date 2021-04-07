@@ -8,8 +8,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const environment = require('./configuration/environment');
 
-console.log(path.resolve(environment.paths.source));
-
 module.exports = {
   entry: {
     index: path.resolve(environment.paths.source, 'scripts', 'index.js'),
