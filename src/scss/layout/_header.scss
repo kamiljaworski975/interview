@@ -1,18 +1,18 @@
 .header {
   background-color: $color-primary;
   padding: 15rem 0 10rem;
-  @include respond(md) {
+  @include respond(xl) {
     padding: 0;
   }
   &__container {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
     align-items: center;
 
-    @include respond(md) {
+    @include respond(xl) {
       flex-direction: row;
+      min-height: 100vh;
     }
   }
 
@@ -22,7 +22,7 @@
     justify-content: center;
     flex-direction: column;
     margin-bottom: 10rem;
-    @include respond(md) {
+    @include respond(xl) {
       margin-bottom: 0;
     }
     & h1 {
@@ -37,10 +37,16 @@
     text-align: center;
     flex-basis: 100%;
     & img {
-      max-width: 100%;
+      max-width: 70%;
       height: auto;
       border-radius: 10px;
       box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.185);
+      @include respond(xl) {
+        max-width: 100%;
+      }
+      @include respond(xxl) {
+        max-width: 600px;
+      }
     }
   }
 }
