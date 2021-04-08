@@ -2,14 +2,13 @@
   background-color: $color-primary;
   padding: 15rem 0 10rem;
   @include respond(xl) {
-    padding: 0;
+    padding: 5rem 0;
   }
   &__container {
     display: flex;
     flex-direction: column;
     position: relative;
     align-items: center;
-
     @include respond(xl) {
       flex-direction: row;
       min-height: 100vh;
@@ -45,7 +44,7 @@
         max-width: 100%;
       }
       @include respond(xxl) {
-        max-width: 600px;
+        max-width: 550px;
       }
     }
   }
