@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="IFC interview assesment" />
+    <title>Dogs Home</title>
+  <link href="css/index.css" rel="stylesheet"></head>
+  <body>
+    <nav class="nav__mobile">
+      <div class="row">
+        <div class="nav__mobile--container">
+          <div class="nav__mobile--logo">LOGO</div>
+          <div class="nav__mobile--menu">
+            <span class="menu-icon__line menu-icon__line-left"></span>
+            <span class="menu-icon__line"></span>
+            <span class="menu-icon__line menu-icon__line-right"></span>
+          </div>
+        </div>
+      </div>
+      <div class="nav__mobile--content">
+        <ul class="nav__mobile--list">
+          <li class="nav__mobile--element"><a href="#ourdogs">our dogs</a></li>
+          <li class="nav__mobile--element">
+            <a href="#personalities">breed personalities</a>
+          </li>
+          <li class="nav__mobile--element"><a href="#about">about us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="nav__desktop">
+      <div class="row">
+        <div class="nav__desktop--container">
+          <div class="nav__desktop--logo">LOGO</div>
+          <div class="nav__desktop--menu">
+            <ul>
+              <li><a href="#ourdogs">our dogs</a></li>
+              <li><a href="#personalities">breed personalities</a></li>
+              <li><a href="#about">about us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="row">
+        <div class="header__container">
+          <div
+            class="header__title"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <h1 class="heading__primary">
+              It was going to be a lonely trip back.
+            </h1>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem
+              ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <div class="header__title--buttons">
+              <a href="#ourdogs" class="btn btn--blue margin-r">Buy now</a>
+              <a href="mailto:hello@dogshome.com" class="btn btn--grey">
+                Contact us</a
+              >
+            </div>
+          </div>
+          <div class="header__img" data-aos="fade-left" data-aos-duration="800">
+            <img
+              src="./assets/images/header-image.webp"
+              alt="header-image-dog"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="ourdogs" class="section__ourdogs">
+        <div class="row">
+          <div class="section__ourdogs--title">
+            <h3 class="heading__tertiary">Our dogs</h3>
+            <label for="filter-dogs">Filter by breed:</label>
+            <div class="select__dogs--box">
+              <select class="select__dogs" name="filter-dogs" id="filter-dogs">
+                <option selected disabled value="select">Select</option>
+                <option value="all">All</option>
+                <option value="pug">Pug</option>
+                <option value="french bulldog">French Bulldog</option>
+                <option value="cockapoo">Cockapoo</option>
+              </select>
+            </div>
+          </div>
+          <div class="section__ourdogs--sort">
+            <label for="sort-dogs">Sort:</label>
+            <div class="select__dogs--box">
+              <select class="select__dogs" name="sort-dogs" id="sort-dogs">
+                <option selected disabled value="select">Select</option>
+                <option value="title">Sort by name</option>
+                <option value="type">Sort by type</option>
+                <option value="age">Age ascending</option>
+                <option value="age-min">Age descending</option>
+                <option value="male">Filter male</option>
+                <option value="female">Filter female</option>
+              </select>
+            </div>
+          </div>
+          <div class="section__ourdogs--list"></div>
+        </div>
+      </section>
+      <section id="personalities" class="section__personalities">
+        <div class="row">
+          <h2 class="heading__secondary">Breed personalities</h2>
+          <table
+            class="section__personalities--table"
+            data-aos-easing="ease-in-back"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <thead>
+              <tr class="section__personalities--headrow-1">
+                <th></th>
+                <th>
+                  <div>
+                    <img src="./assets/images/pug-thumb.webp" alt="pug-thumb" />
+                  </div>
+                </th>
+                <th>
+                  <div>
+                    <img
+                      src="./assets/images/french-bulldog-thumb.webp"
+                      alt="french-bulldog-thumb"
+                    />
+                  </div>
+                </th>
+                <th>
+                  <div>
+                    <img
+                      src="./assets/images/cockapoo-thumb.webp"
+                      alt="cockapoo-thumb"
+                    />
+                  </div>
+                </th>
+              </tr>
+              <tr class="section__personalities--headrow-2">
+                <th></th>
+                <th><span>Pug</span></th>
+                <th><span>French bulldog</span></th>
+                <th><span>Cockapoo</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+                <td>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                  <i class="fas fa-paw"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="about" class="section__about">
+        <div class="row">
+          <div class="section__about--container">
+            <div
+              class="section__about--img"
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
+              <img
+                src="./assets/images/contact-image.webp"
+                alt="about-us-image"
+              />
+            </div>
+            <div
+              class="section__about--text"
+              data-aos="fade-left"
+              data-aos-duration="500"
+            >
+              <h2 class="heading__secondary">About us</h2>
+              <p class="paragraph">
+                Silver must suffused the deck of the ship.
+              </p>
+              <ul class="section__about--list">
+                <li>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </li>
+              </ul>
+              <a href="#" class="btn btn--grey">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="row">
+        <div class="footer__container">
+          <div class="footer__logo">
+            <span>LOGO</span>
+          </div>
+          <div class="footer__copy">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <script defer src="js/index.js"></script></body>
+</html>

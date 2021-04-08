@@ -1,0 +1,46 @@
+{
+    "dogs": [
+        {
+            "title": "Trevor",
+            "type": "French Bulldog",
+            "age": 7,
+            "gender": "Male",
+            "image": "./assets/images/french-bulldog-1.webp"
+        },
+        {
+            "title": "Tina",
+            "type": "Pug",
+            "age": 3,
+            "gender": "Female",
+            "image": "./assets/images/pug-2.webp"
+        },
+        {
+            "title": "Joyce",
+            "type": "Cockapoo",
+            "age": 6,
+            "gender": "Female",
+            "image": "./assets/images/cockapoo-2.webp"
+        },
+        {
+            "title": "Dave",
+            "type": "Pug",
+            "age": 2,
+            "gender": "Male",
+            "image": "./assets/images/pug-1.webp"
+        },
+        {
+            "title": "Gina",
+            "type": "Cockapoo",
+            "age": 2,
+            "gender": "Female",
+            "image": "./assets/images/cockapoo-1.webp"
+        },
+        {
+            "title": "Bert",
+            "type": "French Bulldog",
+            "age": 7,
+            "gender": "Male",
+            "image": "./assets/images/french-bulldog-2.webp"
+        }
+    ]
+}
